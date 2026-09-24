@@ -1,0 +1,9 @@
+"","sample_id","organism","gene_name","gene_len"
+"1",">sample_001","Homo_sapiens","gene=BRCA1","len=120"
+"2",">Sample002","Homo sapiens","gene:TP53",NA
+"3",">sample-003","Homo_sapiens","EGFR","length=150bp"
+"4",">SAMPLE_004","H.sapiens","target=BRCA1",NA
+"5",">sample005","Homo sapiens","TP53"," 130 bp"
+"6",">seq6","Hsapiens","EGFR",NA
+"7",">Sample_007","Homo_sapiens","gene=BRCA1",NA
+"8",">sample-8","Homo_sapiens","gene:TP53","len:NA"
