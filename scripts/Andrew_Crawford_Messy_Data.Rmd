@@ -1,5 +1,5 @@
 ---
-title: "Andrew_Crawford_Lab4"
+title: "Andrew_Crawford_Lab3"
 output:
   pdf_document: default
   html_document:
@@ -13,7 +13,7 @@ library(stringr)
 library(lubridate)
 library(dplyr)
 
-messy_sample <- read.csv("AndrewLab4/data/messy_samples.csv")
+messy_sample <- read.csv("lab3/data/messy_samples.csv")
 messy_sample
 
 str(messy_sample)
@@ -108,7 +108,7 @@ write.csv(cleaned_sample, "AndrewLab4/output/clean_sample.csv", row.names = FALS
 ## Cleaning Messy_sequences.fasta
 
 ```{r}
-headers_fasta <- readLines("AndrewLab4/data/messy_sequences.fasta")
+headers_fasta <- readLines("lab3/data/messy_sequences.fasta")
 headers_fasta <- headers_fasta[str_starts(headers_fasta, ">")]
 headers_fasta
 ```
@@ -131,6 +131,6 @@ clean_sequence <- extracted
 
 View(clean_sequence)
 
-write.csv(clean_sequence, "AndrewLab4/output/clean_sample.csv", row.names = FALSE)
+write.csv(clean_sequence, "lab3/output/clean_sample.csv", row.names = FALSE)
 ```
 
