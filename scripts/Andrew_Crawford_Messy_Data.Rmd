@@ -116,8 +116,8 @@ headers_fasta
 ```{r}
 sample_id_pattern <- "((?i)>s[\\w_-]+)"
 organism_pattern  <- "(H....[\\w_]+)"
-gene_name_pattern <- "(gene.(\\w)+)|(target.(\\w)+)|(EGFR)|(TP53)"
-gene_len_pattern <- "(( \\d..+)|(len.+))"
+gene_name_pattern <- "(?<=gene=)\\w+|(?<=target=)\\w+|EGFR|TP53"
+gene_len_pattern <- "(?<=len[=:])\\w+|(?<=length=)\\d+| \\d.."
 
 extracted <- data.frame(
   sample_id = str_extract(headers_fasta, sample_id_pattern),
